@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="ssm-server:main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="com.shenhua.server.ssm" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="web application context" name="MVC application context" removed="true" />
+        <fileset id="web springMVC servlet context" name="MVC springMVC servlet context" removed="true" />
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/../../src/main/resources/spring/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/../../src/main/resources/spring/dispatcher-servlet.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web Gradle : ssm-server-1.0.war">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/../../src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../../src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../build/classes/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-test:4.3.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-context-support:4.3.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jdbc:4.3.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-tx:4.3.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-webmvc:4.3.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: commons-dbcp:commons-dbcp:1.4" level="project" />
+    <orderEntry type="library" name="Gradle: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: javax.servlet:jstl:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: javax.servlet.jsp:jsp-api:2.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.json:json:20160810" level="project" />
+    <orderEntry type="library" name="Gradle: cn.songxinqiang:com.baidu.ueditor:1.1.2-edit-1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.5.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.alibaba:fastjson:1.2.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.alibaba:druid:1.0.24" level="project" />
+    <orderEntry type="library" name="Gradle: org.mybatis:mybatis:3.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.mybatis:mybatis-spring:1.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.mybatis.generator:mybatis-generator-core:1.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:5.1.38" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-log4j12:1.7.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.aspectj:aspectjrt:1.7.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.aspectj:aspectjweaver:1.7.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-core:4.3.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-beans:4.3.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-context:4.3.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-aop:4.3.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-expression:4.3.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-web:4.3.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: commons-pool:commons-pool:1.5.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.5.3" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.5" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" name="Gradle: commons-fileupload:commons-fileupload:1.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+  </component>
+</module>
