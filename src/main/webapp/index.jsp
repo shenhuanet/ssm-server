@@ -7,10 +7,11 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <title>ssm-server</title>
+</head>
+<body style="text-align: center">
+This is a Welcome Page for ssm-server.<br><br>
+You can click <a style="color: blue;" href="/admin/login">here</a> to login the system.
+</body>
 </html>
