@@ -10,9 +10,18 @@
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
+
+    <context-param>
+        <param-name>log4jConfigLocation</param-name>
+        <param-value>classpath*:/log/log4j.properties</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    </listener>
+
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath*:/spring-context.xml</param-value>
+        <param-value>classpath*:/spring/spring-context.xml</param-value>
     </context-param>
 
     <filter>
@@ -36,20 +45,21 @@
         <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
     </listener>
     <servlet>
-        <servlet-name>springMVC</servlet-name>
+        <servlet-name>spring-context</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath*:/spring-context-mvc.xml</param-value>
+            <param-value>classpath*:/spring/spring-context-mvc.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>springMVC</servlet-name>
+        <servlet-name>spring-context</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
+    <!--错误页面配置-->
     <error-page>
         <error-code>404</error-code>
         <location>/index.jsp</location>
@@ -66,4 +76,5 @@
         <error-code>500</error-code>
         <location>/index.jsp</location>
     </error-page>
+
 </web-app>

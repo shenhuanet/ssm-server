@@ -1,0 +1,71 @@
+group 'com.shenhua.server.ssm'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply from: 'generator.gradle'
+
+sourceCompatibility = 1.8
+
+def springVersion = "4.3.12.RELEASE"
+def mybatisVision = "3.2.5"
+
+repositories {
+    maven {
+        url "http://maven.aliyun.com/nexus/content/groups/public/"
+    }
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile(
+            "org.springframework:spring-test:${springVersion}",
+            "org.springframework:spring-context-support:${springVersion}",
+            "org.springframework:spring-jdbc:${springVersion}",
+            "org.springframework:spring-tx:${springVersion}",
+            "org.springframework:spring-webmvc:${springVersion}"
+    )
+    compile(
+            "commons-dbcp:commons-dbcp:1.4",
+            "commons-logging:commons-logging:1.1.3",
+            "commons-collections:commons-collections:3.2.1",
+            "commons-io:commons-io:2.4",
+            "commons-lang:commons-lang:2.6"
+    )
+    compile(
+            "javax.servlet:javax.servlet-api:3.1.0",
+            "javax.servlet:jstl:1.2",
+            "javax.servlet.jsp:jsp-api:2.2"
+    )
+    compile(
+            "commons-fileupload:commons-fileupload:1.3.1",
+            "commons-codec:commons-codec:1.9",
+            "org.json:json:20160810",
+            "cn.songxinqiang:com.baidu.ueditor:1.1.2-edit-1.0"
+    )
+    compile("com.fasterxml.jackson.core:jackson-databind:2.5.3")
+    compile(
+            "com.alibaba:fastjson:1.2.4",
+            "com.alibaba:druid:1.0.24"
+    )
+    compile(
+            "org.mybatis:mybatis:${mybatisVision}",
+            "org.mybatis:mybatis-spring:1.2.2",
+            "org.mybatis.generator:mybatis-generator-core:1.3.2",
+            "mysql:mysql-connector-java:5.1.38"
+    )
+    compile(
+            "org.slf4j:slf4j-api:1.7.7",
+            "org.slf4j:slf4j-log4j12:1.7.7",
+            "log4j:log4j:1.2.16"
+    )
+    compile(
+            "org.aspectj:aspectjrt:1.7.4",
+            "org.aspectj:aspectjweaver:1.7.4"
+    )
+
+    generCompile 'org.mybatis.generator:mybatis-generator-core:1.3.2'
+    generCompile 'mysql:mysql-connector-java:5.1.38'
+    generCompile 'tk.mybatis:mapper:3.3.9'
+}

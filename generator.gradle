@@ -1,0 +1,34 @@
+configurations {
+    generCompile
+}
+
+task mybatisGenerate {
+    doFirst {
+        ant.echo('------------------------- start generating.')
+        def prop = new Properties()
+        file('src/main/resources/mybatis/config.properties').withInputStream { prop.load(it) }
+        prop.each {
+            project.extensions.add("$it.key", it.value)
+            if (it.key.contains('jdbc') || it.key.contains('package')) {
+                ant.properties["$it.key"] = it.value
+            }
+        }
+    }
+    doLast {
+        ant.taskdef(
+                name: 'mbgenerator',
+                classname: 'org.mybatis.generator.ant.GeneratorAntTask',
+                classpath: configurations.generCompile.asPath
+        )
+        ant.mbgenerator(
+                configfile: 'src/main/resources/mybatis/generatorConfig.xml',
+                overwrite: true, verbose: true) {
+            propertyset {
+                ant.properties.each {
+                    propertyref(name: "$it.key")
+                }
+            }
+        }
+        ant.echo('------------------------- generate complete.')
+    }
+}
